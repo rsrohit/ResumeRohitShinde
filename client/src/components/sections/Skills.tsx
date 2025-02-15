@@ -3,14 +3,20 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const skills = {
-  "Frontend": [
-    "React.js", "Angular", "JavaScript", "TypeScript", "HTML5", "CSS3", "Redux"
+  "Frontend Development": [
+    "Angular", "React", "JavaScript", "jQuery", "HTML", "CSS", "Bootstrap"
   ],
-  "Backend": [
-    "Node.js", "Java", "Spring Boot", "Express.js", "RESTful APIs"
+  "Backend Development": [
+    "Java", "Node.js", "Spring Boot", "Express.js"
+  ],
+  "Programming Languages": [
+    "Java", "JavaScript", "TypeScript", "Python"
+  ],
+  "Database": [
+    "MySQL", "PostgreSQL", "MongoDB"
   ],
   "Tools & Others": [
-    "Git", "Docker", "Jenkins", "AWS", "Jira", "Agile", "MongoDB", "PostgreSQL"
+    "Git", "GitHub", "VS Code", "Eclipse", "Postman", "Jenkins", "Docker"
   ]
 };
 

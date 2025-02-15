@@ -5,16 +5,23 @@ import { FaLaptopCode } from "react-icons/fa";
 const experiences = [
   {
     company: "Persistent Systems",
+    role: "Full Stack Developer",
+    period: "July 2022 - Present",
+    description: "Working on React and Node js application development. Building complex user interface using React. Developing REST API's for the application using Node js.",
+    icon: FaLaptopCode,
+  },
+  {
+    company: "Persistent Systems",
     role: "Software Engineer",
-    period: "Aug 2021 - Present",
-    description: "Working on a healthcare project using React.js, TypeScript and Node.js. Implementing new features, fixing bugs and improving application performance.",
+    period: "July 2021 - June 2022",
+    description: "Developed multiple features for the application using Angular and Java. Created REST API's using Java spring boot. Writing unit test cases for frontend as well as backend code.",
     icon: FaLaptopCode,
   },
   {
     company: "Tata Consultancy Services",
     role: "Systems Engineer",
-    period: "Sept 2018 - Aug 2021",
-    description: "Worked on multiple projects using Angular, React.js and Java. Developed and maintained web applications, collaborated with cross-functional teams.",
+    period: "Sept 2018 - July 2021",
+    description: "Developed web applications using Angular and Java. Created REST API's using Java spring boot. Writing unit test cases for frontend as well as backend code.",
     icon: FaLaptopCode,
   },
 ];
