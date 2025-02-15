@@ -4,24 +4,53 @@ import { FaLaptopCode } from "react-icons/fa";
 
 const experiences = [
   {
-    company: "Persistent Systems",
-    role: "Full Stack Developer",
-    period: "July 2022 - Present",
-    description: "Working on React and Node js application development. Building complex user interface using React. Developing REST API's for the application using Node js.",
+    company: "Globant India Pvt Ltd",
+    role: "Senior Test Automation Engineer",
+    period: "Dec 2020 - Present",
+    description: [
+      "Led QA efforts on MissionGraph project for Deloitte US (Dec 2020 - Jun 2024)",
+      "Increased test coverage by 300% and automated coverage from 13% to 63%",
+      "Implemented E2E and API testing using Cypress.io framework",
+      "Set up GitHub Actions workflows for SonarQube analysis",
+      "Automated load testing with Jenkins and K6",
+      "Currently working on Partner Travel project for JPMorgan Chase"
+    ],
     icon: FaLaptopCode,
   },
   {
-    company: "Persistent Systems",
-    role: "Software Engineer",
-    period: "July 2021 - June 2022",
-    description: "Developed multiple features for the application using Angular and Java. Created REST API's using Java spring boot. Writing unit test cases for frontend as well as backend code.",
+    company: "Expleo Group",
+    role: "QA Analyst",
+    period: "May 2017 - Feb 2020",
+    description: [
+      "Worked on Siemens PLM Software project",
+      "Developed automation scripts using Selenium and Java",
+      "Implemented automated test cases using UFT for Java-based Windows applications",
+      "Worked closely with development teams on defect resolution"
+    ],
     icon: FaLaptopCode,
   },
   {
-    company: "Tata Consultancy Services",
-    role: "Systems Engineer",
-    period: "Sept 2018 - July 2021",
-    description: "Developed web applications using Angular and Java. Created REST API's using Java spring boot. Writing unit test cases for frontend as well as backend code.",
+    company: "Yardi Software India Pvt Ltd",
+    role: "Specialist QC - II",
+    period: "Sep 2015 - May 2017",
+    description: [
+      "Tested property management applications for global clients",
+      "Developed test cases and executed automation using TestNG",
+      "Performed API testing using Postman and RestAssured",
+      "Collaborated with US-based clients for requirement analysis"
+    ],
+    icon: FaLaptopCode,
+  },
+  {
+    company: "Syntel Ltd",
+    role: "Testing Engineer",
+    period: "Jul 2012 - Sep 2015",
+    description: [
+      "Worked on FedEx Ground Team's Logistics and Shipping processing systems",
+      "Developed automated scripts using QTP/UFT",
+      "Executed regression testing and defect tracking in HP ALM",
+      "Ensured compliance with industry standards"
+    ],
     icon: FaLaptopCode,
   },
 ];
@@ -57,7 +86,15 @@ export default function Experience() {
                 </CardHeader>
                 <CardContent>
                   <p className="font-medium mb-2">{exp.role}</p>
-                  <p className="text-muted-foreground">{exp.description}</p>
+                  <ul className="text-muted-foreground space-y-1 list-disc pl-4">
+                    {Array.isArray(exp.description) ? (
+                      exp.description.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))
+                    ) : (
+                      <li>{exp.description}</li>
+                    )}
+                  </ul>
                 </CardContent>
               </Card>
             </motion.div>
