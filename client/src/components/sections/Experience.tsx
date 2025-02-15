@@ -1,28 +1,21 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FaGoogle, FaMicrosoft, FaAmazon } from "react-icons/fa";
+import { FaLaptopCode } from "react-icons/fa";
 
 const experiences = [
   {
-    company: "Google",
-    role: "Senior Frontend Engineer",
-    period: "2020 - Present",
-    description: "Led the development of key features for Google Cloud Platform's web console.",
-    icon: FaGoogle,
-  },
-  {
-    company: "Microsoft",
+    company: "Persistent Systems",
     role: "Software Engineer",
-    period: "2018 - 2020",
-    description: "Developed and maintained core components of the Azure portal.",
-    icon: FaMicrosoft,
+    period: "Aug 2021 - Present",
+    description: "Working on a healthcare project using React.js, TypeScript and Node.js. Implementing new features, fixing bugs and improving application performance.",
+    icon: FaLaptopCode,
   },
   {
-    company: "Amazon",
-    role: "Frontend Developer",
-    period: "2016 - 2018",
-    description: "Built responsive web applications for Amazon's retail platform.",
-    icon: FaAmazon,
+    company: "Tata Consultancy Services",
+    role: "Systems Engineer",
+    period: "Sept 2018 - Aug 2021",
+    description: "Worked on multiple projects using Angular, React.js and Java. Developed and maintained web applications, collaborated with cross-functional teams.",
+    icon: FaLaptopCode,
   },
 ];
 
@@ -36,7 +29,7 @@ export default function Experience() {
         viewport={{ once: true }}
       >
         <h2 className="text-3xl font-bold mb-8">Experience</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
