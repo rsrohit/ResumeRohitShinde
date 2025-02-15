@@ -38,13 +38,14 @@ export default function About() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
+          className="flex justify-center"
         >
-          <Card>
+          <Card className="w-64 h-64 overflow-hidden rounded-full">
             <CardContent className="p-0">
               <img
-                src="https://avatars.githubusercontent.com/u/31814279"
+                src="/profile.jpeg"
                 alt="Rohit Shinde"
-                className="w-full h-auto rounded-lg"
+                className="w-full h-full object-cover"
               />
             </CardContent>
           </Card>
