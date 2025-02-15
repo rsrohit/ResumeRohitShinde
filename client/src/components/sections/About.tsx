@@ -19,7 +19,7 @@ export default function About() {
             </span>
           </h1>
           <p className="text-xl text-muted-foreground mb-6">
-            Full Stack Developer with experience in building web applications using modern technologies. Passionate about creating efficient and user-friendly solutions.
+            A results-driven Automation and Manual Test Engineer with over 12+ years of expertise in enhancing software quality through comprehensive testing strategies. Specialized in UI automation testing, API automation testing, and Performance testing, leveraging tools such as Selenium WebDriver, Cypress, k6, TestNG, and Cucumber with Java and JavaScript.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button onClick={() => window.open("/resume.pdf")}>
@@ -28,7 +28,7 @@ export default function About() {
             <Button variant="outline" onClick={() => window.open("https://github.com/rsrohit")}>
               <Github className="mr-2 h-4 w-4" /> GitHub
             </Button>
-            <Button variant="outline" onClick={() => window.open("https://www.linkedin.com/in/rohit-shinde-7b0981139/")}>
+            <Button variant="outline" onClick={() => window.open("https://www.linkedin.com/in/rohit-shinde-498a05a7")}>
               <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
             </Button>
           </div>
