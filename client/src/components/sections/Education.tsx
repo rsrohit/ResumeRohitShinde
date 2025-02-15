@@ -3,17 +3,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const education = [
   {
-    school: "Stanford University",
-    degree: "Master of Science in Computer Science",
-    period: "2014 - 2016",
-    description: "Specialized in Human-Computer Interaction and Web Technologies",
-  },
-  {
-    school: "University of California, Berkeley",
-    degree: "Bachelor of Science in Computer Science",
-    period: "2010 - 2014",
-    description: "Dean's List, Computer Science Student Association President",
-  },
+    school: "Savitribai Phule Pune University",
+    degree: "Bachelor of Computer Application",
+    period: "2008 - 2011",
+    description: "Computer Science",
+  }
 ];
 
 export default function Education() {

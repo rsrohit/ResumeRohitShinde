@@ -60,15 +60,15 @@ export default function Contact() {
           <div className="space-y-6">
             <div className="flex items-center gap-4">
               <Mail className="h-5 w-5 text-primary" />
-              <p>email@example.com</p>
+              <p>rsrohitshindeg1@gmail.com</p>
             </div>
             <div className="flex items-center gap-4">
               <Phone className="h-5 w-5 text-primary" />
-              <p>+1 (555) 123-4567</p>
+              <p>+91 90 28 533 209</p>
             </div>
             <div className="flex items-center gap-4">
               <MapPin className="h-5 w-5 text-primary" />
-              <p>San Francisco, CA</p>
+              <p>Pune, Maharashtra, India</p>
             </div>
           </div>
 
