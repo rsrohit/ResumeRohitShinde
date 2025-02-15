@@ -7,13 +7,33 @@ const experiences = [
     company: "Globant India Pvt Ltd",
     role: "Senior Test Automation Engineer",
     period: "Dec 2020 - Present",
-    description: [
-      "Led QA efforts on MissionGraph project for Deloitte US (Dec 2020 - Jun 2024)",
-      "Increased test coverage by 300% and automated coverage from 13% to 63%",
-      "Implemented E2E and API testing using Cypress.io framework",
-      "Set up GitHub Actions workflows for SonarQube analysis",
-      "Automated load testing with Jenkins and K6",
-      "Currently working on Partner Travel project for JPMorgan Chase"
+    projects: [
+      {
+        name: "Partner Travel - JPMorgan Chase",
+        period: "Jul 2024 - Dec 2024",
+        details: [
+          "Ensured quality for Partner Travel applications supporting financial institutions like FIS and Mastercard.",
+          "Used WebdriverIO with JavaScript for automation testing.",
+          "Developed test plans and executed manual/automated testing.",
+          "Maintained test documentation in JIRA and Confluence."
+        ]
+      },
+      {
+        name: "MissionGraph - Deloitte US",
+        period: "Dec 2020 - Jun 2024",
+        details: [
+          "Led the QA efforts on the MissionGraph project, a robust big data ingestion and analytics platform developed for Deloitte.",
+          "Spearheaded the implementation of automated software testing solutions, boosting test coverage by over 300% and elevating automated vs. manual coverage from 13% to 63%.",
+          "Developed and maintained a suite of end-to-end (E2E) and API integration tests using the Cypress.io framework.",
+          "Established seamless API integration with Cypress.io, GitHub, and Microsoft Teams.",
+          "Devised robust workflows utilizing GitHub Actions for SonarQube analysis.",
+          "Implemented hourly health check test runs for monitoring environment health.",
+          "Automated scripted load tests using Jenkins and K6.",
+          "Conducted comprehensive automated accessibility testing with Cypress-axe plugin.",
+          "Led weekly QE meetings and provided technical mentorship.",
+          "Pioneered quality engineering processes with a shift-left, agile approach."
+        ]
+      }
     ],
     icon: FaLaptopCode,
   },
@@ -65,7 +85,7 @@ export default function Experience() {
         viewport={{ once: true }}
       >
         <h2 className="text-3xl font-bold mb-8">Experience</h2>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid gap-6">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
@@ -86,15 +106,27 @@ export default function Experience() {
                 </CardHeader>
                 <CardContent>
                   <p className="font-medium mb-2">{exp.role}</p>
-                  <ul className="text-muted-foreground space-y-1 list-disc pl-4">
-                    {Array.isArray(exp.description) ? (
-                      exp.description.map((item, i) => (
+                  {exp.projects ? (
+                    <div className="space-y-6">
+                      {exp.projects.map((project, i) => (
+                        <div key={i} className="border-l-2 border-primary pl-4">
+                          <h3 className="font-medium text-primary">{project.name}</h3>
+                          <p className="text-sm text-muted-foreground mb-2">{project.period}</p>
+                          <ul className="text-muted-foreground space-y-1 list-disc pl-4">
+                            {project.details.map((detail, j) => (
+                              <li key={j}>{detail}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <ul className="text-muted-foreground space-y-1 list-disc pl-4">
+                      {exp.description.map((item, i) => (
                         <li key={i}>{item}</li>
-                      ))
-                    ) : (
-                      <li>{exp.description}</li>
-                    )}
-                  </ul>
+                      ))}
+                    </ul>
+                  )}
                 </CardContent>
               </Card>
             </motion.div>
