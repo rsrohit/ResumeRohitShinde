@@ -1,6 +1,22 @@
 {
   "variant": "professional",
   "primary": "hsl(215 50% 23%)",
-  "appearance": "light",
-  "radius": 0.5
+  "appearance": "system",
+  "radius": 0.5,
+  "lightColors": {
+    "background": "255 255 255",
+    "foreground": "10 10 10",
+    "card": "255 255 255",
+    "card-foreground": "10 10 10",
+    "border": "214.3 31.8% 91.4%",
+    "input": "214.3 31.8% 91.4%"
+  },
+  "darkColors": {
+    "background": "10 10 10",
+    "foreground": "255 255 255",
+    "card": "20 20 20",
+    "card-foreground": "255 255 255",
+    "border": "217.2 32.6% 17.5%",
+    "input": "217.2 32.6% 17.5%"
+  }
 }
