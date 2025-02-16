@@ -38,7 +38,12 @@ var vite_config_default = defineConfig({
     outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
     rollupOptions: {
-      input: path.resolve(__dirname, "client/public/index.html")
+      input: path.resolve(__dirname, "client/public/index.html"),
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom", "react-router-dom"]
+        }
+      }
     }
   }
 });
